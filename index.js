@@ -11,8 +11,8 @@ const userRouter=require("./routes/User.Router")
 const noteRouter=require("./routes/Notes.Route")
 
 const cors=require('cors')
-app.use(cors())
 app.use(express.json())
+app.use(cors())
 
 app.use("/users",userRouter)
 
